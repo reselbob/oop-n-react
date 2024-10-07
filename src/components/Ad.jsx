@@ -1,5 +1,6 @@
 import React from 'react'
 import { useId } from 'react';
+import DateReporter from './DateReporter';
 
 const Ad = ({ children, onClick }) => {
     const id = useId();
@@ -8,17 +9,19 @@ const Ad = ({ children, onClick }) => {
         onClick ? onClick() : console.log(`Default handler for ${id}`);
     }
 
-
-
     return (
-        <div id={id} className="oopsie-box">
-            <div className="oopsie-font">
-                {children ? children : defaultAd}
+        <div className="oopsie-box">
+            <div id={id} >
+                <div className="oopsie-font">
+                    {children ? children : defaultAd}
+                </div>
+                <div>
+                    <button className="oopsie-button" onClick={handleClick}>Click me</button>
+                </div>
             </div>
-            <div>
-                <button className="oopsie-button" onClick={handleClick}>Click me</button>
-            </div>
+            <DateReporter />
         </div>
+
     )
 }
 

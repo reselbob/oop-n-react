@@ -3,20 +3,21 @@ import Ad from './components/Ad';
 import Simple from './components/Simple';
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="App-header">
-        This is a project the demonstrates how to apply OOP thinking to React programming.
+        This is a project that demonstrates how to apply OOP thinking to React programming.
       </div>
       <Simple />
+      <Ad />
       <Ad>
-        Ad One
+        Buy my stuff now because it's the best!
       </Ad>
       <Ad onClick={() => {console.log('This is outside behavior for Ad Two')}}>
-        Ad Two
+        We offer overnight shipping!
       </Ad>
-      <Ad />
+    
     </div>
   );
 }
