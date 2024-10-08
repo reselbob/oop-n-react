@@ -33,6 +33,16 @@
   color: #282c34;
 }
 
+.datereporter-box{
+  font-size: 18px;
+  background-color: lightcoral;
+  border-radius: 10px;
+  color: black;
+  padding: 4px;
+  margin: 4px;
+  max-width: 300px;
+}
+
 .oopsie-box{
   background-color: lightblue;
   border-radius: 10px;

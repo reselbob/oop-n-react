@@ -4,7 +4,7 @@ import DateReporter from './DateReporter';
 
 const Ad = ({ children, onClick }) => {
     const id = useId();
-    const defaultAd = `This is the default advertisement for the Ad component ${id}. Isn't it great?`;
+    const defaultAd = `Default advertisement for the Ad component [${id}].`;
     const handleClick = () => {
         onClick ? onClick() : console.log(`Default handler for ${id}`);
     }

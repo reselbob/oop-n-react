@@ -2,10 +2,11 @@ import React from 'react'
 
 const DateReporter = () => {
 
-    const newDate = new Date().toString();
+    const newDate = new Date().toLocaleDateString();;
     return (
-        <div>
-            The current date is: {newDate}
+        <div className="datereporter-box">
+            <div>The current date is:</div>
+            <div>{newDate}</div>
         </div>
     )
 }
