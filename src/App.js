@@ -8,13 +8,12 @@ const App = () => {
     <div className="App">
       <Header />
       <Ad />
-      <Ad>
+       <Ad onClick={() => {prompt('Is our stuff really the best?')}}>
         Buy my stuff now because it's the best!
       </Ad>
       <Ad onClick={() => {alert('Take advantage of overnight shipping and buy more stuff now!')}}>
         We offer overnight shipping!
-      </Ad>
-    
+      </Ad>    
     </div>
   );
 }
